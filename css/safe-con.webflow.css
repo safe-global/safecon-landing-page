@@ -486,12 +486,15 @@ a {
 }
 
 .animated-text {
-  width: 2070px;
   height: 50px;
   color: #121312;
   letter-spacing: 0;
+  white-space: nowrap;
+  word-break: normal;
+  margin-right: 0;
   padding-top: 14px;
-  font-size: 20px;
+  font-size: 22px;
+  position: static;
 }
 
 .p-l {
@@ -530,6 +533,7 @@ a {
   min-height: 100%;
   min-width: 230px;
   color: #fff;
+  object-fit: fill;
   border: 1px solid #636669;
   border-radius: 15px;
   flex-direction: column;
@@ -668,8 +672,8 @@ a {
 .speaker-wrapper {
   width: 100%;
   max-width: 1400px;
-  grid-column-gap: 40px;
-  grid-row-gap: 40px;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
   flex-wrap: wrap;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1059,6 +1063,35 @@ a {
 
 .image-8 {
   width: 29%;
+}
+
+.container-loo-inner {
+  width: 100%;
+  max-width: 0;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  flex-wrap: nowrap;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  overflow: visible;
+}
+
+.loop-text-outer {
+  width: 100%;
+  background-color: #12ff80;
+  display: none;
+  overflow: hidden;
+}
+
+.loop-text-inner {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  overflow: visible;
 }
 
 @media screen and (max-width: 991px) {
