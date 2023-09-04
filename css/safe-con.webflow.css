@@ -101,7 +101,7 @@ a {
 
 .nav-link {
   color: #fff;
-  letter-spacing: .25px;
+  letter-spacing: 0.25px;
   margin-left: 5px;
   margin-right: 5px;
   padding: 5px 10px;
@@ -109,7 +109,7 @@ a {
   font-weight: 300;
   line-height: 20px;
   text-decoration: none;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .nav-link:hover {
@@ -140,7 +140,7 @@ a {
 
 .button-primary {
   color: #121312;
-  letter-spacing: .2px;
+  letter-spacing: 0.2px;
   text-transform: none;
   background-color: #12ff80;
   border-radius: 6px;
@@ -152,16 +152,17 @@ a {
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
-  transition: all .2s;
+  transition: all 0.2s;
   display: flex;
 }
 
-.button-primary:hover, .button-primary:active {
+.button-primary:hover,
+.button-primary:active {
   background-color: #0eb259;
 }
 
 .button-primary.nav {
-  letter-spacing: .4px;
+  letter-spacing: 0.4px;
   border-radius: 4px;
   margin-left: 10px;
   padding: 12px 24px;
@@ -170,7 +171,7 @@ a {
 
 .button-primary.ticket {
   color: #12ff80;
-  letter-spacing: .46px;
+  letter-spacing: 0.46px;
   background-color: #121312;
   align-self: auto;
   margin-right: 40px;
@@ -253,7 +254,7 @@ a {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   -webkit-text-fill-color: inherit;
-  background-image: url('../images/All.svg');
+  background-image: url("../images/All.svg");
   background-position: 0 0;
   background-size: 100% 100%;
   background-clip: border-box;
@@ -337,7 +338,7 @@ a {
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .footer-links:hover {
@@ -412,7 +413,7 @@ a {
 }
 
 .wbs-accordion-3-heading:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .wbs-accordion-3-item {
@@ -581,7 +582,7 @@ a {
   width: 50%;
   height: auto;
   max-width: 1400px;
-  background-image: url('../images/venue_photo.png');
+  background-image: url("../images/venue_photo.png");
   background-position: 50%;
   background-size: cover;
   border: 0 solid #636669;
@@ -715,7 +716,7 @@ a {
 
 .speaker-img {
   width: 100%;
-  background-image: url('../images/Rectangle-2.png');
+  background-image: url("../images/Rectangle-2.png");
   background-position: 50%;
   background-size: 444px;
   border-radius: 12px;
@@ -724,7 +725,7 @@ a {
 
 .speaker-img.luis {
   max-height: 150px;
-  background-image: url('../images/64e5b2463d114486838d0116_Rectangle-3.png');
+  background-image: url("../images/64e5b2463d114486838d0116_Rectangle-3.png");
   background-position: 50%;
   background-size: 170%;
   border-radius: 12px;
@@ -732,7 +733,7 @@ a {
 }
 
 .speaker-img.punk {
-  background-image: url('../images/Rectangle-1.png');
+  background-image: url("../images/Rectangle-1.png");
   background-position: 50% 48%;
 }
 
@@ -740,7 +741,7 @@ a {
   color: #fff;
   -webkit-text-stroke-color: #fff;
   text-decoration: none;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .textlink:hover {
@@ -752,13 +753,14 @@ a {
   width: 80%;
   height: 70%;
   mix-blend-mode: lighten;
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
+  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg");
   background-position: 0 0;
   background-size: auto;
   position: absolute;
 }
 
-.corebin.pic, .hide {
+.corebin.pic,
+.hide {
   display: none;
 }
 
@@ -803,7 +805,7 @@ a {
 }
 
 .address-link:hover {
-  opacity: .64;
+  opacity: 0.64;
 }
 
 .placeholder-title {
@@ -900,6 +902,11 @@ a {
   display: flex;
 }
 
+.current {
+  border-color: #12ff80;
+  transition: all 0.2s;
+}
+
 .category-pill {
   min-width: 90px;
   color: #12ff80;
@@ -939,7 +946,7 @@ a {
   border-radius: 20px;
   justify-content: center;
   align-items: center;
-  transition: all .2s;
+  transition: all 0.2s;
   display: flex;
 }
 
@@ -1052,7 +1059,7 @@ a {
 
 .multiply {
   width: 100%;
-  opacity: .53;
+  opacity: 0.53;
   mix-blend-mode: multiply;
   position: absolute;
 }
@@ -1306,7 +1313,9 @@ a {
     position: relative;
   }
 
-  .green, .softlight, .multiply {
+  .green,
+  .softlight,
+  .multiply {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1358,7 +1367,7 @@ a {
 
   .ticket-div {
     height: 450px;
-    background-image: url('../images/ticket-green-mobile-1.svg');
+    background-image: url("../images/ticket-green-mobile-1.svg");
     flex-direction: column;
     display: flex;
   }
@@ -1717,101 +1726,100 @@ a {
   grid-area: span 1 / span 3 / span 1 / span 3;
 }
 
-
 @font-face {
-  font-family: 'Citerne';
-  src: url('../fonts/Citerne-Thin.ttf') format('truetype');
+  font-family: "Citerne";
+  src: url("../fonts/Citerne-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Citerne';
-  src: url('../fonts/Citerne-ThinItalic.ttf') format('truetype');
+  font-family: "Citerne";
+  src: url("../fonts/Citerne-ThinItalic.ttf") format("truetype");
   font-weight: 100;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Citerne';
-  src: url('../fonts/Citerne-MediumItalic.ttf') format('truetype');
+  font-family: "Citerne";
+  src: url("../fonts/Citerne-MediumItalic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Citerne';
-  src: url('../fonts/Citerne-Black.ttf') format('truetype');
+  font-family: "Citerne";
+  src: url("../fonts/Citerne-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Citerne';
-  src: url('../fonts/Citerne-Light.ttf') format('truetype');
+  font-family: "Citerne";
+  src: url("../fonts/Citerne-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Citerne';
-  src: url('../fonts/Citerne-Regular.ttf') format('truetype');
+  font-family: "Citerne";
+  src: url("../fonts/Citerne-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Citerne';
-  src: url('../fonts/Citerne-ExtralightItalic.ttf') format('truetype');
+  font-family: "Citerne";
+  src: url("../fonts/Citerne-ExtralightItalic.ttf") format("truetype");
   font-weight: 200;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Citerne';
-  src: url('../fonts/Citerne-Italic.ttf') format('truetype');
+  font-family: "Citerne";
+  src: url("../fonts/Citerne-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Citerne';
-  src: url('../fonts/Citerne-BoldItalic.ttf') format('truetype');
+  font-family: "Citerne";
+  src: url("../fonts/Citerne-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Citerne';
-  src: url('../fonts/Citerne-Medium.ttf') format('truetype');
+  font-family: "Citerne";
+  src: url("../fonts/Citerne-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Citerne';
-  src: url('../fonts/Citerne-Bold.ttf') format('truetype');
+  font-family: "Citerne";
+  src: url("../fonts/Citerne-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Citerne';
-  src: url('../fonts/Citerne-LightItalic.ttf') format('truetype');
+  font-family: "Citerne";
+  src: url("../fonts/Citerne-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Citerne';
-  src: url('../fonts/Citerne-BlackItalic.ttf') format('truetype');
+  font-family: "Citerne";
+  src: url("../fonts/Citerne-BlackItalic.ttf") format("truetype");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Citerne';
-  src: url('../fonts/Citerne-Extralight.ttf') format('truetype');
+  font-family: "Citerne";
+  src: url("../fonts/Citerne-Extralight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
