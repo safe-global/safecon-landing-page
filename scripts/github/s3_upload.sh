@@ -3,7 +3,7 @@
 set -ev
 
 # First, upload the new files w/o deleting the old ones
-aws s3 sync . $BUCKET --exclude '.git/*' --recursive
+aws s3 sync . $BUCKET --exclude '.git/*' --exclude '.github/*'
 
 # Second, upload them again but delete the old files this time
 # This allows for a no-downtime deployment
