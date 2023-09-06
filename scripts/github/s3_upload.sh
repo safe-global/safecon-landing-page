@@ -7,7 +7,7 @@ aws s3 sync . $BUCKET --exclude '.git/*' --exclude '.github/*'
 
 # Second, upload them again but delete the old files this time
 # This allows for a no-downtime deployment
-aws s3 sync . $BUCKET --delete
+aws s3 sync . $BUCKET --exclude '.git/*' --exclude '.github/*' --delete
 
 # Finally, upload all HTML files again but w/o an extention so that URLs like /welcome open the right page
 for file in $(find . -name '*.html' | sed 's|^\./||'); do
