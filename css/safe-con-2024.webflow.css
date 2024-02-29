@@ -5,7 +5,7 @@
 
 .w-embed-youtubevideo {
   width: 100%;
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/static/youtube-placeholder.2b05e7d68d.svg');
+  background-image: url("https://d3e54v103j8qbb.cloudfront.net/static/youtube-placeholder.2b05e7d68d.svg");
   background-position: 50%;
   background-size: cover;
   padding-bottom: 0;
@@ -78,7 +78,7 @@
 
 .link-2 {
   color: #fff;
-  letter-spacing: .01em;
+  letter-spacing: 0.01em;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 18px;
@@ -227,7 +227,7 @@
 .button {
   color: #303033;
   text-align: center;
-  letter-spacing: .46px;
+  letter-spacing: 0.46px;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 18px;
@@ -275,7 +275,7 @@
 
 .button-2 {
   color: #303033;
-  letter-spacing: .46px;
+  letter-spacing: 0.46px;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 18px;
@@ -389,7 +389,8 @@
   display: block;
 }
 
-.text-block.agenda, .text-block.last {
+.text-block.agenda,
+.text-block.last {
   padding-left: 0;
 }
 
@@ -704,7 +705,7 @@
 }
 
 .section-2 {
-  background-image: url('../images/hero-banner-image.png');
+  background-image: url("../images/hero-banner-image.png");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: 90%;
@@ -789,7 +790,8 @@
   border-right-color: #a1a3a7;
 }
 
-.cell.cbottom, .cell.topcentre {
+.cell.cbottom,
+.cell.topcentre {
   border-style: none;
   border-right-color: #a1a3a7;
 }
@@ -906,7 +908,7 @@
 .button-3 {
   color: #12ff80;
   text-align: center;
-  letter-spacing: .46px;
+  letter-spacing: 0.46px;
   margin-top: 0;
   margin-bottom: 0;
   font-family: Citerne, sans-serif;
@@ -935,7 +937,7 @@
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   -webkit-text-fill-color: inherit;
-  background-image: url('../images/All.svg');
+  background-image: url("../images/All.svg");
   background-position: 0 0;
   background-size: 100% 100%;
   background-clip: border-box;
@@ -1014,7 +1016,7 @@
 
 .button-primary-3 {
   color: #121312;
-  letter-spacing: .2px;
+  letter-spacing: 0.2px;
   text-transform: none;
   background-color: #12ff80;
   border-radius: 6px;
@@ -1026,17 +1028,18 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
-  transition: all .2s;
+  transition: all 0.2s;
   display: flex;
 }
 
-.button-primary-3:hover, .button-primary-3:active {
+.button-primary-3:hover,
+.button-primary-3:active {
   background-color: #0eb259;
 }
 
 .button-primary-3.ticket {
   color: #12ff80;
-  letter-spacing: .46px;
+  letter-spacing: 0.46px;
   background-color: #121312;
   align-self: auto;
   margin-right: 40px;
@@ -1070,7 +1073,14 @@
   display: none;
 }
 
-.image-5, .image-6, .image-7, .image-8, .image-9, .image-10, .image-11, .image-12 {
+.image-5,
+.image-6,
+.image-7,
+.image-8,
+.image-9,
+.image-10,
+.image-11,
+.image-12 {
   align-self: center;
 }
 
@@ -1090,14 +1100,10 @@
   padding-left: 0;
 }
 
-.link-3 {
-  color: #303033;
-  font-size: 18px;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.link-4, .link-5, .link-6 {
+.link-3,
+.link-4,
+.link-5,
+.link-6 {
   color: #fff;
   font-size: 18px;
   text-decoration: none;
@@ -1354,7 +1360,8 @@
     padding-bottom: 30px;
   }
 
-  .column-2, .column-3 {
+  .column-2,
+  .column-3 {
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -1404,7 +1411,15 @@
     border-left-color: #a1a3a7;
   }
 
-  .cell.top, .cell.cleft, .cell.bleft, .cell.cbottom, .cell.topcentre, .cell.cc, .cell.centreright, .cell.bottomright, .cell.topright {
+  .cell.top,
+  .cell.cleft,
+  .cell.bleft,
+  .cell.cbottom,
+  .cell.topcentre,
+  .cell.cc,
+  .cell.centreright,
+  .cell.bottomright,
+  .cell.topright {
     padding: 20px;
   }
 
@@ -1420,7 +1435,7 @@
 
   .ticket-div {
     height: 450px;
-    background-image: url('../images/ticket-green-mobile-1.svg');
+    background-image: url("../images/ticket-green-mobile-1.svg");
     flex-direction: column;
     display: flex;
   }
@@ -1669,7 +1684,9 @@
     padding: 10px;
   }
 
-  .cell.cleft, .cell.bleft, .cell.cbottom {
+  .cell.cleft,
+  .cell.bleft,
+  .cell.cbottom {
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -1678,7 +1695,9 @@
     padding: 30px 10px;
   }
 
-  .cell.cc, .cell.centreright, .cell.bottomright {
+  .cell.cc,
+  .cell.centreright,
+  .cell.bottomright {
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -1818,7 +1837,9 @@
     background-color: #121312;
   }
 
-  .nav-link, .nav-link-2, .nav-link-3 {
+  .nav-link,
+  .nav-link-2,
+  .nav-link-3 {
     color: #fff;
   }
 }
@@ -1828,28 +1849,34 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-#w-node-_7b4f54d3-3bec-b614-c12b-6079c3ca6725-eaa3fde6, #w-node-_9cb4f9a8-9054-ee08-63cb-ed947a072923-eaa3fde6, #w-node-_869290ea-5ff0-44bb-82da-8aafd0d898ae-eaa3fde6, #w-node-_48dc7f83-60a9-cd41-5bdd-15a6d1efe12d-eaa3fde6, #w-node-_0d749954-4b43-6cb8-d986-0d16136af8f5-eaa3fde6, #w-node-d3adcf5c-8040-4353-dc6b-d8cb59d9d4d6-eaa3fde6, #w-node-_55b6198d-bbf9-6bc1-3a38-4d8447d7c2c7-eaa3fde6, #w-node-_984845bc-f969-b1e1-a794-439c62eca711-eaa3fde6 {
+#w-node-_7b4f54d3-3bec-b614-c12b-6079c3ca6725-eaa3fde6,
+#w-node-_9cb4f9a8-9054-ee08-63cb-ed947a072923-eaa3fde6,
+#w-node-_869290ea-5ff0-44bb-82da-8aafd0d898ae-eaa3fde6,
+#w-node-_48dc7f83-60a9-cd41-5bdd-15a6d1efe12d-eaa3fde6,
+#w-node-_0d749954-4b43-6cb8-d986-0d16136af8f5-eaa3fde6,
+#w-node-d3adcf5c-8040-4353-dc6b-d8cb59d9d4d6-eaa3fde6,
+#w-node-_55b6198d-bbf9-6bc1-3a38-4d8447d7c2c7-eaa3fde6,
+#w-node-_984845bc-f969-b1e1-a794-439c62eca711-eaa3fde6 {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
-
 @font-face {
-  font-family: 'Citerne';
-  src: url('../fonts/Citerne-Light.woff') format('woff');
+  font-family: "Citerne";
+  src: url("../fonts/Citerne-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Citerne';
-  src: url('../fonts/Citerne-Regular.woff') format('woff');
+  font-family: "Citerne";
+  src: url("../fonts/Citerne-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Citerne';
-  src: url('../fonts/Citerne-Medium.woff') format('woff');
+  font-family: "Citerne";
+  src: url("../fonts/Citerne-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
