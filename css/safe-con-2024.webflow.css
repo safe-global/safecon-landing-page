@@ -704,7 +704,7 @@
 }
 
 .section-2 {
-  background-image: url('../images/Group-1000002850.png');
+  background-image: url('../images/hero-banner-image.png');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: 90%;
@@ -1634,6 +1634,7 @@
   }
 
   .section-2 {
+    background-position: 50% 20%;
     padding-top: 60px;
     padding-bottom: 80px;
   }
