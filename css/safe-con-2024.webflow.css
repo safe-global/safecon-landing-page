@@ -46,6 +46,8 @@
   padding-right: 80px;
   text-decoration: none;
   display: flex;
+  position: sticky;
+  top: 0;
 }
 
 .content {
