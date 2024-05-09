@@ -1,6 +1,6 @@
 {
   "name": "safecon-landing-page",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Safe{Con} landing page",
   "main": "index.js",
   "scripts": {
