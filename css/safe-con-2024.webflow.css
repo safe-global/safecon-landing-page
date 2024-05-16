@@ -126,6 +126,11 @@
   text-decoration: none;
 }
 
+.text-2.date {
+  color: #12ff80;
+  font-weight: 500;
+}
+
 .vectors-wrapper-3 {
   object-fit: fill;
   flex: 0 auto;
@@ -717,7 +722,6 @@
   margin-left: 60px;
   margin-right: 60px;
   display: block;
-  position: relative;
 }
 
 .div-block {
