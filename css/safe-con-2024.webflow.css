@@ -717,6 +717,7 @@
   margin-left: 60px;
   margin-right: 60px;
   display: block;
+  position: relative;
 }
 
 .div-block {
