@@ -4187,21 +4187,18 @@
   .frame-1000003024 {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-  }
-
-  .frame-1000003024 > * {
-    min-width: 50%;
-    max-width: 50%;
+    width: 100%;
   }
 
   .frame-1000003025 {
     grid-column-gap: 15px;
     flex: 1;
+    min-width: 35%;
     height: 260px;
   }
 
   .frame-1000003026 {
-    width: 110px;
+    width: 90%;
   }
 
   .co-founder-safe-3 {
@@ -4209,7 +4206,7 @@
   }
 
   .frame-1000003027 {
-    width: 110px;
+    width: 90%;
   }
 
   .ceo-co-founder-hq-xyz-2 {
