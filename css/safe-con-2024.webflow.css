@@ -4189,6 +4189,11 @@
     grid-row-gap: 10px;
   }
 
+  .frame-1000003024 > * {
+    min-width: 50%;
+    max-width: 50%;
+  }
+
   .frame-1000003025 {
     grid-column-gap: 15px;
     flex: 1;
