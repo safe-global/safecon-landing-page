@@ -3121,6 +3121,7 @@
   padding-bottom: 0;
   display: block;
   position: absolute;
+  z-index: -1;
 }
 
 .text-block-2 {
