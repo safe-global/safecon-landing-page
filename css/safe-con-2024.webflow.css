@@ -1,3 +1,27 @@
+@font-face {
+  font-family: Citerne;
+  src: url('../fonts/Citerne-Light.woff') format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Citerne;
+  src: url('../fonts/Citerne-Regular.woff') format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Citerne;
+  src: url('../fonts/Citerne-Medium.woff') format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --agenda-title-tablet: 18px;
   --white: white;
@@ -32,6 +56,11 @@
   padding-right: 80px;
   text-decoration: none;
   display: flex;
+}
+
+.navigation-bar._3 {
+  border-style: none;
+  border-left-color: #18191a;
 }
 
 .content {
@@ -100,7 +129,7 @@
   margin-bottom: 0;
   font-family: Citerne, sans-serif;
   font-size: 50px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 32px;
   text-decoration: none;
 }
@@ -128,7 +157,7 @@
 
 .text-2.date {
   color: #12ff80;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .vectors-wrapper-3 {
@@ -339,7 +368,7 @@
 }
 
 .heading {
-  color: rgba(255, 255, 255, 0);
+  color: #fff0;
   text-align: left;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #12ff80;
@@ -551,7 +580,7 @@
   outline-offset: 0px;
   -webkit-text-stroke-width: 0px;
   -webkit-text-stroke-color: #d62121;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: #fff0;
   border: 1px solid #fff;
   border-radius: 0;
   outline: 3px #e63939;
@@ -559,8 +588,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-flow: row;
   align-content: center;
-  align-items: center;
-  justify-items: center;
+  place-items: center;
   padding: 15px;
   position: static;
 }
@@ -669,7 +697,7 @@
 
 .out_of_frame-22-1 {
   object-fit: cover;
-  border: 1px solid #636669;
+  border: 1px #636669;
   border-radius: 6px;
   flex: 1;
   order: 0;
@@ -722,7 +750,6 @@
   margin-left: 60px;
   margin-right: 60px;
   display: block;
-  position: relative;
 }
 
 .div-block {
@@ -755,6 +782,7 @@
 
 .partners {
   margin: 120px 70px;
+  display: none;
 }
 
 .column-4 {
@@ -952,8 +980,7 @@
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
-  align-content: stretch;
-  justify-content: space-between;
+  place-content: stretch space-between;
   align-items: center;
   width: 100%;
   max-width: 900px;
@@ -975,10 +1002,7 @@
   margin-left: 60px;
   padding-left: 0;
   position: absolute;
-  top: 0%;
-  bottom: 0%;
-  left: -110px;
-  right: auto;
+  inset: 0% auto 0% -110px;
 }
 
 .ticket-shape.r {
@@ -1101,16 +1125,10 @@
   padding-left: 0;
 }
 
-.link-3 {
+.link-3, .link-4, .link-5, .link-6 {
   color: #fff;
   font-size: 18px;
-  font-weight: 400;
-  text-decoration: none;
-}
-
-.link-4, .link-5, .link-6 {
-  color: #fff;
-  font-size: 18px;
+  font-weight: 300;
   text-decoration: none;
 }
 
@@ -1190,7 +1208,7 @@
   margin-bottom: 0;
   font-family: Citerne, sans-serif;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 120%;
   text-decoration: none;
 }
@@ -1204,6 +1222,7 @@
   align-items: center;
   width: 138px;
   height: 56px;
+  -webkit-text-decoration: none;
   text-decoration: none;
   display: flex;
 }
@@ -1236,6 +1255,7 @@
 
 .button-4.end-button {
   color: #12ff80;
+  font-weight: 400;
 }
 
 .frame-1000002990 {
@@ -1284,8 +1304,11 @@
 }
 
 .image-51 {
+  filter: grayscale();
   object-fit: cover;
   border-radius: 6px;
+  width: 202px;
+  height: 202px;
 }
 
 .frame-1000002991 {
@@ -1583,7 +1606,7 @@
   margin-bottom: 0;
   font-family: Citerne, sans-serif;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 28px;
   text-decoration: none;
 }
@@ -1595,7 +1618,7 @@
   margin-bottom: 0;
   font-family: Citerne, sans-serif;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 20px;
   text-decoration: none;
 }
@@ -2349,6 +2372,8 @@
 }
 
 .frame-1000003090 {
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -2363,8 +2388,8 @@
   margin-bottom: 0;
   font-family: Citerne, sans-serif;
   font-size: 24px;
-  font-weight: 400;
-  line-height: 40px;
+  font-weight: 300;
+  line-height: 28px;
   text-decoration: none;
 }
 
@@ -2373,9 +2398,9 @@
   margin-top: 0;
   margin-bottom: 0;
   font-family: Citerne, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 32px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
   text-decoration: none;
 }
 
@@ -2427,7 +2452,7 @@
   margin-bottom: 0;
   font-family: Citerne, sans-serif;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 32px;
   text-decoration: none;
 }
@@ -2447,7 +2472,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-top: 464px;
+  padding-top: 240px;
   text-decoration: none;
   display: flex;
 }
@@ -2508,6 +2533,8 @@
 }
 
 .frame-1000003100 {
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -2523,7 +2550,7 @@
   font-family: Citerne, sans-serif;
   font-size: 24px;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 32px;
   text-decoration: none;
 }
 
@@ -2532,9 +2559,9 @@
   margin-top: 0;
   margin-bottom: 0;
   font-family: Citerne, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 32px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
   text-decoration: none;
 }
 
@@ -2568,7 +2595,7 @@
 }
 
 .frame-1000003104 {
-  grid-row-gap: 16px;
+  grid-row-gap: 8px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -2583,7 +2610,7 @@
   margin-bottom: 0;
   font-family: Citerne, sans-serif;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 32px;
   text-decoration: none;
 }
@@ -2621,7 +2648,7 @@
   margin-bottom: 0;
   font-family: Citerne, sans-serif;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 100%;
   text-decoration: none;
 }
@@ -2633,7 +2660,7 @@
   margin-bottom: 0;
   font-family: Citerne, sans-serif;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 100%;
   text-decoration: none;
 }
@@ -3002,7 +3029,7 @@
   grid-column-gap: 100px;
   grid-row-gap: 10px;
   object-fit: fill;
-  background-image: url('../images/Vectors-Wrapper_4.svg');
+  background-image: url('../images/Vectors-Wrapper_3.svg');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -3090,14 +3117,25 @@
 
 .background-video {
   width: 100%;
-  height: 70%;
+  height: 100%;
   padding-bottom: 0;
+  display: block;
   position: absolute;
 }
 
 .text-block-2 {
+  letter-spacing: -1px;
   font-size: 40px;
   line-height: 40px;
+}
+
+.bold-text, .bold-text-2, .bold-text-3 {
+  font-weight: 300;
+}
+
+.flex-block {
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
 }
 
 @media screen and (max-width: 991px) {
@@ -3450,7 +3488,7 @@
   }
 
   .background-video {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: #fff0;
     width: 100%;
     height: 50%;
     position: absolute;
@@ -4184,9 +4222,15 @@
     padding-top: 0;
   }
 
+  .image-51 {
+    max-height: 50%;
+  }
+
   .frame-1000003024 {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
     width: 100%;
   }
 
@@ -4194,19 +4238,27 @@
     grid-column-gap: 15px;
     flex: 1;
     min-width: 35%;
-    height: 260px;
+    height: 250px;
+    padding-bottom: 30px;
   }
 
   .frame-1000003026 {
-    width: 90%;
+    grid-row-gap: 4px;
+    width: 110px;
+  }
+
+  .text-16 {
+    font-size: 16px;
+    line-height: 18px;
   }
 
   .co-founder-safe-3 {
     font-size: 12px;
+    line-height: 14px;
   }
 
   .frame-1000003027 {
-    width: 90%;
+    width: 110px;
   }
 
   .ceo-co-founder-hq-xyz-2 {
@@ -4215,7 +4267,7 @@
   }
 
   .frame-1000003028, .frame-1000003029 {
-    width: 90%;
+    width: 90px;
   }
 
   .frame-1000003090 {
@@ -4223,7 +4275,7 @@
   }
 
   .text-32 {
-    line-height: 30px;
+    line-height: 26px;
   }
 
   .frame-1000003093, .frame-1000003094, .frame-1000003095 {
