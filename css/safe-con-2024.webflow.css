@@ -2472,7 +2472,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-top: 240px;
+  padding-top: 150px;
   text-decoration: none;
   display: flex;
 }
@@ -3121,7 +3121,6 @@
   padding-bottom: 0;
   display: block;
   position: absolute;
-  z-index: -1;
 }
 
 .text-block-2 {
